@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AddUserController">
+    <children>
+        <HBox prefHeight="58.0" prefWidth="600.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить пользователя в базу данных">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox>
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Введите логин" wrappingWidth="156.13671875" />
+                <TextField fx:id="NewLoginField" prefHeight="25.0" prefWidth="509.0" />
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+         <padding>
+            <Insets left="20.0" top="10.0" />
+         </padding>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="68.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Введите пароль" wrappingWidth="156.13671875" />
+                <TextField fx:id="NewPasswordField" prefHeight="25.0" prefWidth="509.0" />
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+         <padding>
+            <Insets left="20.0" top="10.0" />
+         </padding>
+        </HBox>
+      <HBox layoutX="38.0" layoutY="121.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите роль (1, для администратора, 0 для пользователя)" wrappingWidth="156.13671875" />
+            <TextField fx:id="NewRoleField" prefHeight="25.0" prefWidth="509.0" />
+         </children>
+         <padding>
+            <Insets left="20.0" top="10.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+        <HBox prefHeight="100.0" prefWidth="451.0">
+            <children>
+                <JFXButton onMouseClicked="#save" prefHeight="33.0" prefWidth="428.0" style="-fx-background-color: #00BFFF;" text="Сохранить">
+                    <HBox.margin>
+                        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+                    </HBox.margin>
+                </JFXButton>
+            </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+    </padding>
+</VBox>

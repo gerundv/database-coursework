@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="700.0" style="-fx-background-color: #00BFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.UserController">
+    <children>
+        <AnchorPane layoutY="58.0" prefHeight="250.0" prefWidth="700.0" style="-fx-background-color: #30D5C8;">
+            <children>
+                <Label layoutX="51.0" layoutY="46.0" text="Таблица Города">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="262.0" layoutY="46.0" text="Таблица Организации">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="507.0" layoutY="46.0" text="Таблица Вакансии">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="CityTableButton" layoutX="42.0" layoutY="120.0" mnemonicParsing="false" text="Открыть таблицу Города" />
+                <Button fx:id="OrganizationTableButton" layoutX="260.0" layoutY="120.0" mnemonicParsing="false" text="Открыть таблицу Организации" />
+                <Button fx:id="VacancyTableButton" layoutX="501.0" layoutY="120.0" mnemonicParsing="false" text="Открыть таблицу Вакансии" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="193.0" layoutY="14.0" text="Вы вошли как обычный пользователь">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

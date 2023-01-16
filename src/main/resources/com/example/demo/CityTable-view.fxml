@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="880.0" style="-fx-background-color: #00BFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CityTableController">
+    <children>
+        <AnchorPane layoutX="-6.0" layoutY="62.0" prefHeight="440.0" prefWidth="880.0" style="-fx-background-color: #30D5C8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TableView fx:id="CityTable" layoutX="273.0" layoutY="80.0" prefHeight="282.0" prefWidth="328.0">
+              <columns>
+                <TableColumn fx:id="CityIdColumn" prefWidth="165.0" text="city_id" />
+                <TableColumn fx:id="CityNameColumn" prefWidth="165.0" text="name" />
+              </columns>
+            </TableView>
+            <Button fx:id="UpdateTableButton" layoutX="30.0" layoutY="29.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="213.0" text="Обновить таблицу" />
+            <Button fx:id="InsertIntoCityTableButton" layoutX="30.0" layoutY="195.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="213.0" text="Добавить запись в таблицу" />
+            <Button fx:id="DeleteButton" layoutX="30.0" layoutY="337.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="213.0" text="Удалить запись в таблице" />
+         </children>
+        </AnchorPane>
+        <Label layoutX="371.0" layoutY="14.0" text="Таблица Города">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AddOrganizationController">
+    <children>
+        <HBox prefHeight="58.0" prefWidth="600.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить запись в таблицу Организации">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+      <HBox layoutX="18.0" layoutY="111.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Введите Id организации" wrappingWidth="156.13671875" />
+            <TextField fx:id="NewOrgIdField" prefHeight="25.0" prefWidth="509.0" />
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="271.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Введите адрес организации" wrappingWidth="156.13671875" />
+            <TextField fx:id="NewAddressField" prefHeight="25.0" prefWidth="509.0" />
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+        <HBox>
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Введите фамилию руководителя" wrappingWidth="156.13671875" />
+                <TextField fx:id="NewBossField" prefHeight="25.0" prefWidth="509.0" />
+            </children>
+            <VBox.margin>
+                <Insets left="20.0" top="10.0" />
+            </VBox.margin>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+        </HBox>
+      <HBox layoutX="38.0" layoutY="121.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Введите Id города" wrappingWidth="156.13671875" />
+            <TextField fx:id="CityIdField" prefHeight="25.0" prefWidth="509.0" />
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+        <HBox layoutX="10.0" layoutY="68.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Введите номер телефона организации" wrappingWidth="156.13671875" />
+                <TextField fx:id="NewPhoneField" prefHeight="25.0" prefWidth="509.0" />
+            </children>
+            <VBox.margin>
+                <Insets left="20.0" top="10.0" />
+            </VBox.margin>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <JFXButton onMouseClicked="#save" prefHeight="72.0" prefWidth="160.0" style="-fx-background-color: #00BFFF;" text="Сохранить">
+                    <HBox.margin>
+                        <Insets bottom="25.0" left="50.0" right="50.0" top="25.0" />
+                    </HBox.margin>
+                </JFXButton>
+                <JFXButton layoutX="10.0" layoutY="10.0" onMouseClicked="#clean" prefHeight="72.0" prefWidth="160.0" style="-fx-background-color: #00BFFF;" text="Очистить">
+                    <HBox.margin>
+                        <Insets bottom="25.0" left="50.0" right="50.0" top="25.0" />
+                    </HBox.margin>
+                </JFXButton>
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+    </padding>
+</VBox>

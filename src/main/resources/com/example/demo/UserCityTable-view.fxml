@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="880.0" style="-fx-background-color: #00BFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.UserCityTableController">
+    <children>
+        <AnchorPane layoutX="-6.0" layoutY="62.0" prefHeight="440.0" prefWidth="880.0" style="-fx-background-color: #30D5C8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <TableView fx:id="CityTable" layoutX="273.0" layoutY="80.0" prefHeight="282.0" prefWidth="328.0">
+                    <columns>
+                        <TableColumn fx:id="CityIdColumn" prefWidth="165.0" text="city_id" />
+                        <TableColumn fx:id="CityNameColumn" prefWidth="165.0" text="name" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="371.0" layoutY="14.0" text="Таблица Города">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
