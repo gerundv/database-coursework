@@ -13,11 +13,11 @@ public class AdminDataBaseHandler {
     public Connection getDbConnection() throws SQLException, ClassNotFoundException {
 
         Class.forName("org.postgresql.Driver");
-        String url = "jdbc:postgresql://172.20.8.18:5432/kp0092_01";
+        String url = "jdbc:postgresql://172.20.8.18:5432/DataBaseName";
 
         Properties authorization = new Properties();
-        authorization.put("user", "st0092");
-        authorization.put("password", "qwerty92");
+        authorization.put("user", "");
+        authorization.put("password", "");
 
         dbConnection = DriverManager.getConnection(url, authorization);
 
