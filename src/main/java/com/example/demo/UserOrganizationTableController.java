@@ -50,7 +50,7 @@ public class UserOrganizationTableController extends AdminDataBaseHandler {
     private void refreshTable() throws SQLException, ClassNotFoundException {
         OrganizationTableList.clear();
 
-        query = "SELECT * FROM organization";
+        query = "SELECT * FROM organizations";
         preparedStatement = getDbConnection().prepareStatement(query);
         resultSet = preparedStatement.executeQuery();
 

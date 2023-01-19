@@ -75,7 +75,7 @@ public class AddVacancyController extends AdminDataBaseHandler {
     }
 
     private void getQuery() {
-        query = "INSERT INTO vacancy (vac_id, start_salary, title, org_id) VALUES (" + NewVacIdField.getText() + "," + NewSalaryField.getText() + ",'"+ NewVacTitleField.getText() + "'," +  OrgIdField.getText() + ");";
+        query = "INSERT INTO vacancies (vac_id, start_salary, title, org_id) VALUES (" + NewVacIdField.getText() + "," + NewSalaryField.getText() + ",'"+ NewVacTitleField.getText() + "'," +  OrgIdField.getText() + ");";
     }
 
     String query = null;

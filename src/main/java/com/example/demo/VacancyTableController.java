@@ -53,7 +53,7 @@ public class VacancyTableController extends AdminDataBaseHandler {
     private void refreshTable() throws SQLException, ClassNotFoundException {
         VacancyTableList.clear();
 
-        query = "SELECT * FROM vacancy";
+        query = "SELECT * FROM vacancies";
         preparedStatement = getDbConnection().prepareStatement(query);
         resultSet = preparedStatement.executeQuery();
 
@@ -108,7 +108,7 @@ public class VacancyTableController extends AdminDataBaseHandler {
 
         DeleteButton.setOnAction(actionEvent -> {
             vacancyTable = VacancyTable.getSelectionModel().getSelectedItem();
-            query = "DELETE FROM vacancy WHERE vac_id=" + vacancyTable.getVac_id() + ";";
+            query = "DELETE FROM vacancies WHERE vac_id=" + vacancyTable.getVac_id() + ";";
             try {
                 preparedStatement = getDbConnection().prepareStatement(query);
                 preparedStatement.execute();

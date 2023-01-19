@@ -30,7 +30,7 @@ public class UserVacancyTableController extends AdminDataBaseHandler{
     private void refreshTable() throws SQLException, ClassNotFoundException {
         VacancyTableList.clear();
 
-        query = "SELECT * FROM vacancy";
+        query = "SELECT * FROM vacancies";
         preparedStatement = getDbConnection().prepareStatement(query);
         resultSet = preparedStatement.executeQuery();
 

@@ -81,7 +81,7 @@ public class AddOrganizationController extends AdminDataBaseHandler {
     }
 
     private void getQuery() {
-        query = "INSERT INTO organization (org_id, address, fam_boss, city_id, ph_number) VALUES (" + NewOrgIdField.getText() + ",'" + NewAddressField.getText() + "','"+ NewBossField.getText() + "'," +  CityIdField.getText() + ",'" +  NewPhoneField.getText() + "');";
+        query = "INSERT INTO organizations (org_id, address, fam_boss, city_id, ph_number) VALUES (" + NewOrgIdField.getText() + ",'" + NewAddressField.getText() + "','"+ NewBossField.getText() + "'," +  CityIdField.getText() + ",'" +  NewPhoneField.getText() + "');";
     }
 
     String query = null;

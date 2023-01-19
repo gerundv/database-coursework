@@ -57,7 +57,7 @@ public class OrganizationTableController extends AdminDataBaseHandler{
     private void refreshTable() throws SQLException, ClassNotFoundException {
         OrganizationTableList.clear();
 
-        query = "SELECT * FROM organization";
+        query = "SELECT * FROM organizations";
         preparedStatement = getDbConnection().prepareStatement(query);
         resultSet = preparedStatement.executeQuery();
 
@@ -113,7 +113,7 @@ public class OrganizationTableController extends AdminDataBaseHandler{
 
         DeleteButton.setOnAction(actionEvent -> {
             organizationTable = OrganizationTable.getSelectionModel().getSelectedItem();
-            query = "DELETE FROM organization WHERE org_id=" + organizationTable.getOrg_id() + ";";
+            query = "DELETE FROM organizations WHERE org_id=" + organizationTable.getOrg_id() + ";";
             try {
                 preparedStatement = getDbConnection().prepareStatement(query);
                 preparedStatement.execute();

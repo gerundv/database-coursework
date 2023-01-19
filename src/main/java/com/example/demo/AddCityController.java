@@ -66,7 +66,7 @@ public class AddCityController extends AdminDataBaseHandler {
     }
 
     private void getQuery() {
-        query = "INSERT INTO city (city_id, name) VALUES (" + NewCityIdField.getText() + ",'" + NewCityNameField.getText() + "');";
+        query = "INSERT INTO cities (city_id, name) VALUES (" + NewCityIdField.getText() + ",'" + NewCityNameField.getText() + "');";
     }
 
     String query = null;

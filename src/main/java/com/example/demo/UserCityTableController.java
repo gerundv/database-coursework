@@ -42,7 +42,7 @@ public class UserCityTableController extends AdminDataBaseHandler{
     private void refreshTable() throws SQLException, ClassNotFoundException {
         CityTableList.clear();
 
-        query = "SELECT * FROM city";
+        query = "SELECT * FROM cities";
         preparedStatement = getDbConnection().prepareStatement(query);
         resultSet = preparedStatement.executeQuery();
 
